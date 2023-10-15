@@ -1,0 +1,1 @@
+chrome.action.onClicked.addListener(t=>{chrome.storage.sync.get({optOutAnalytics:!1},e=>{let i=(e.optOutAnalytics,["content.js"]);chrome.scripting.executeScript({target:{tabId:t.id,allFrames:!0},world:"MAIN",files:i})})});
